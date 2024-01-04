@@ -364,6 +364,12 @@ variable "aft_vpc_public_subnet_02_cidr" {
   }
 }
 
+variable "aft_tgw_cidrs" {
+  type        = list(string)
+  description = "CIDR Block to route to via Transit Gateway"
+  default     = ["0.0.0.0/0"]
+}
+
 #########################################
 # AFT Metrics Reporting Variables
 #########################################
