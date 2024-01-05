@@ -37,6 +37,10 @@ variable "aft_vpc_public_subnet_02_cidr" {
   type = string
 }
 
+variable "aft_tgw_cidrs" {
+  type = list(string)
+}
+
 variable "request_framework_archive_path" {
   type = string
 }
